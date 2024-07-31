@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfolio Home Page</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Playwrite+MX&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="page-scripts.js">	</script>
+</head>
+<body>
+	<header>
+		<!-- Top navigation within the header of the page -->
+		<nav class="topnav">
+  			<a href="" aria-current="page" >Home</a>
+  			<!--A drop down navigation button for the about me pages -->
+  			<div class="dropdown">
+    			<button class="dropbtn">About Me</button>
+    			<nav class="dropdown-content">
+      				<a href="work-education.html">Work/Education</a>
+      				<a href="personal-family.html">Personal/Family</a>
+    			</nav>
+    		</div>
+  			<a href="hero.html">Hero</a>
+  			<a href="contact.html">Contact Me</a>
+  			<button id="toggleBtn" onclick="changeBackground()">Toggle Gif Background</button>
+  		</nav>
+	</header>
+	<!--- Main section of the portfolio it contains two main sections: a left and right-->
+	<!-- Each section is made of cards that hold different information-->
+	<main>
+		<section class="left">
+			<!-- Left side of the web page -->
+			<section class="bio-card">
+				<!-- Bio card represents a section of the code that will hold bio information -->
+				<section class="profile-picture">
+					<h2>Rachel Warner</h2>
+					<img src="photos/rachel.jpg" alt="A photo of Rachel">
+					
+				</section>
+				<section class="profile-info">
+					<p id="tagline"> "Romans 8:38-39" </p>
+					<p>A driven developer, ready to take on the next big task</p>
+					<p>Based in: Reading, PA</p>
+					<p>United States</p>
+				</section>
+				<section id="galleries">
+					<!-- Galleries contain a small gallery of photos-->
+					<p>View my: <br>
+						<a href="javascript:void(0)" onclick="openSlides();">Pics</a>
+					</p>
+				</section>
+			</section>
+
+			<!-- The contact card holds links to contact information/external links to get in touch. -->
+			<section id="contact">
+				<h3>Contacting Rachel</h3>
+				<section id="contact-links">
+					<ul>
+						<li><a href="mailto:RMWarner96@gmail.com">Personal Email</a>
+						</li>
+						<li><a href="mailto:rwarn7@uis.edu"> School Email </a></li>
+						<li><a href="https://www.linkedin.com/in/rachel-marie-warner/" target="_blank">LinkedIn</a></li>
+					</ul>
+					<ul>
+						<li><a href="https://www.facebook.com/RachyRachWarner" target="_blank">Facebook</a></li>
+						<li><a href="https://github.com/RMWarner9">GitHub</a></li>
+					</ul>
+				</section>
+			</section>
+
+			<!-- A music-player card holding a Spotify playlist -->
+			<section id="music-player">
+					<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1Fa1IIVtEpGUcU?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+			</section>
+			
+		</section>
+
+		<!-- Right side of the webpage -->
+		<section class="right">
+
+			<section id="intro">
+				<!-- The intro card holds a small introduction -->
+				<h3>Rachel's Introduction</h3>
+				<section id="about-me">
+					<h4>About me:</h4>
+					<p>Hi! I am Rachel Warner. I am currently a student at University of Illinois Springfield residing in Reading, Pennsylvania. <br>
+					When I am not pursing my studies, you can find me playing with my dog Leon, entertaining my cat, Kat, or working on house projects with my partner, Seth.<br>
+					I often reminisce about the early 90's internet which is my inspiration for this portfolio.
+						<br>Get to know more about me by going to the About Me pages!
+					</p>
+				</section>
+			</section>
+
+			<section id="interests">
+				<!-- The interests card holds a table showing general interests-->
+				<h3>Rachel's Interests</h3>
+				<table>
+					<colgroup>
+						<col span="1" style="background-color:#90ee9038; width:25%">
+						<col span="1" style="padding: 0.5em">
+					</colgroup>
+					<tr>
+						<td>General</td>
+						<td>Singing, Music, Video Games, Broadway Musicals, Christianity, Comedy, Horror Films</td>
+					<tr>
+					<tr>
+						<td>Music</td>
+						<td>Paramore, Kirk Franklin, Fleetwood Mac, Evanescence, Billie Holiday, Ella Fitzgerald</td>
+					</tr>
+					<tr>
+						<td>Hobbies</td>
+						<td>Sporting Clays, Hiking, Learning new things, drawing</td>
+					</tr>
+					</table>
+			</section>
+		</section>
+	</main>
+	<!--The footer section contains hyperlinks to High school, College, Facebook, and Github -->
+	<footer>&#169; Rachel Warner Portfolio <a href="https://www.pmsd.org/Domain/12" target="_blank">High School</a> <a href="https://www.uis.edu/" target="_blank">College</a> <a href="https://www.facebook.com/RachyRachWarner" target="_blank">Facebook</a> <a href="https://github.com/RMWarner9" target="_blank">GitHub</a>
+	</footer>
+</body>
+
+<!-- This slides container is hidden. It holds the slide show on this page that appears when the user clicks the "Pics" link -->
+<section class="slides-container">
+	<button class="close-button" onclick="closeSlides()">&times;</button>	
+	<div class="slides-container-content">
+			<div class="slide">
+				<img src="photos/OurLittleFamily.jpg" alt="A picture of Rachel and Seth when Leon was a puppy">
+			</div>
+
+			<div class="slide">
+				<img src="photos/KatAndLeon.jpg" alt="Kat and Leon">
+			</div>
+
+			<div class="slide">
+				<img src="photos/Mom.jpg" alt="Rachel's Mom">
+			</div>
+
+			<div class="slide">
+				<img src="photos/SethAndMe.jpg" alt="Rachel and Seth">
+			</div>
+
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+  	</div>
+
+</section>
+</html>
