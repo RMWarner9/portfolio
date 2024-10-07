@@ -104,8 +104,8 @@ body{
 
 /* Set the grid template for the main section */
 main {
-  display: grid;
-  grid-template-columns: 45% 55%;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Set the color of the footer to be white */
@@ -120,17 +120,13 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   gap: 4em;
+  align-items: center;
 }
 
 /* Make profile picture scalable to screen size */
 .profile-picture img {
-  width: 100%;
-}
-
-/* Set the grid template for the bio-card*/
-.bio-card {
-  display: grid;
-  grid-template-columns: 35% 65%;
+  width: 50%;
+  border-radius: 15em;
 }
 
 /* Set the padding for profile info */
@@ -140,17 +136,28 @@ footer {
 
 
 /* Set the style attributes for the info cards*/
-#contact, .bio-card, #music-player, #interests, #intro, #work, #education, #hobbies, #fun-facts, #bio {
-  border: 1px solid lightgreen;
+#contact, .bio-card, #music-player, #interests, #intro, #work, #education, #hobbies, #fun-facts, #bio, #technical-proficiencies {
   border-top: 31px solid #7a16bc8f;
   background-color: #6008b682;
   padding: 2rem;
   color: white;
   text-shadow: 0 0 3px white;
+  width: 65%;
 }
 
+
+/* Set the template for the bio-card*/
+.bio-card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 15em;
+  width: 434px;
+}
+
+
 /* Set the styling for the headers of cards that contain them */
-#contact h3, #interests h3, #intro h3 {
+#contact h3, #interests h3, #intro h3 , #technical-proficiencies h3{
   margin-top: 0px;
      width: 100%;
     top: -58px;
@@ -159,7 +166,7 @@ footer {
 }
 
 /* Set the display styling for the contacts card*/
-#contact-links{
+#contact-links, #proficiencies {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -167,7 +174,7 @@ footer {
 
 /* Set the display settings for the items within the contact-card*/
 
-#contact-links ul{
+#contact-links ul, #proficiencies ul{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -176,13 +183,13 @@ footer {
 }
 
 /* Remove the list style type for the contact links */
-#contact-links ul li{
+#contact-links ul li, #proficiencies ul li{
   list-style-type: none;
 }
 
 
 /* Set the styling for the contact links*/
-#contact-links ul li a {
+#contact-links ul li a, #proficiencies ul li {
   background-image:url("button-background.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -195,10 +202,18 @@ footer {
   display: flex;
   text-align: center;
   justify-content: center;
-   align-items: center;
-   border-radius: 8em;
-    width: 75%;
+  align-items: center;
+  border-radius: 8em;
+  width: 75%;
+}
 
+#contact-links ul li a {
+  font-weight: bold;
+  color: black;
+}
+
+#proficiencies ul li {
+    background-image:url("dark-flower-background.jpg");
 }
 
 /* Set the style for the gallery links */
@@ -305,10 +320,77 @@ footer a:visited{
   color:lightblue;
 }
 
+#documentation-button {
+  border: none;
+  padding: 0.8em 2.5em;
+  outline: none;
+  color: white;
+  font-style: 1.2em;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  background: none;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.45);
+}
+
+#documentation-button:before,
+#documentation-button:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 10em;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  width: 105%;
+  height: 105%;
+  content: "";
+  z-index: -2;
+  background-size: 400% 400%;
+  background: linear-gradient(
+    60deg,
+    #f79533,
+    #f37055,
+    #ef4e7b,
+    #a166ab,
+    #5073b8,
+    #1098ad,
+    #07b39b,
+    #6fba82
+  );
+}
+
+#documentation-button:before {
+  -webkit-filter: blur(7px);
+  filter: blur(7px);
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-animation: pulse 10s infinite ease;
+  animation: pulse 10s infinite ease;
+}
+
+#documentation-button:after {
+  -webkit-filter: blur(0.3px);
+  filter: blur(0.3px);
+}
+
+#documentation-button:hover:before {
+  width: 115%;
+  height: 115%;
+}
+
 /* Set the styling for the bio and contact cards when the screen width is less than 920px*/
 @media screen and (max-width: 920px ){
 
-  .bio-card, #contact-links{
+  main{
+    display: flex;
+    flex-direction:column;
+  }
+  #contact-links{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #proficiencies{
     display: flex;
     flex-direction: column;
   }

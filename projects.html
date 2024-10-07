@@ -13,52 +13,51 @@
 <body>
 	<header>
 		<nav class="topnav">
-			<!-- Top naviagation containing the nav links to the application -->
+			<!-- Top nav bar for navigating through portfolio -->
   			<a href="index.html" >Home</a>
   			<div class="dropdown">
-  				<!-- drop down navigation for About Me pages -->
+  				<!-- Drop down bar section for About Me pages-->
     			<button class="dropbtn">About Me</button>
     			<nav class="dropdown-content">
       				<a href="work-education.html">Work/Education</a>
       				<a href="personal-family.html">Personal/Family</a>
     			</nav>
     		</div>
-  			<a href="projects.html">Projects</a>
-  			<a href="" aria-current="page" >Contact Me</a>
+  			<a href="" aria-current="page">Projects</a>
+  			<a href="contact.html">Contact Me</a>
   			<button id="toggleBtn" onclick="changeBackground()">Toggle Gif Background</button>
+  		</nav>
+
   		</nav>
 	</header>
 	<main>
-		<!-- Main section of the portfolio contains left and right side -->
-		<!-- Each section has cards containing information -->
+		<!-- The main sectio nof the portfolio has two sections a left and right. Each section contains cards containing different information-->
 		<section class="left">
-			<section id="contact">
-				<!-- Contact card gives information for contacting -->
-				<h3>Contacting Rachel</h3>
-				<section id="contact-links">
-					<ul>
-						<li><a href="mailto:RMWarner96@gmail.com">Personal Email</a>
-						</li>
-						<li><a href="mailto:rwarn7@uis.edu"> School Email </a></li>
-						<li><a href="https://www.linkedin.com/in/rachel-marie-warner/" target="_blank">LinkedIn</a></li>
-					</ul>
-					<ul>
-						<li><a href="https://www.facebook.com/RachyRachWarner" target="_blank">Facebook</a></li>
-						<li><a href="https://github.com/RMWarner9">GitHub</a></li>
-					</ul>
+			<section id="intro">
+				<!-- introduction card -->
+				<h3>Personal Wellness Tracker</h3>
+				<section id="about-me">
+					<h4>About The Project:</h4>
+					<p>
+						The Personal Wellness Tracker is a small Python application that uses a local, single-file database for storing wellness information.
+						Created for the people who have privacy in mind, all data is stored locally so there is no concern over sharing information with
+						third-parties. <br><br>
+						The application allows for the user to store financial, and emotional information for the user to get a visual of their financial
+						and emotional wellness. It also allows the user to store journal entries.
+						<br><br>
+					</p>
+					<button id="documentation-button" onclick="openPDF()">Design Documentation</button>
 				</section>
+
 			</section>
-			
 		</section>
 
 		<section class="right">
-			<section id="music-player">
-				<!-- Music player containing a playlist for the user to listen to -->
-					<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4w3tQBXhn5345eUXDGBWZG?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-			</section>
+			<!-- Right hand side -->
+
+
 		</section>
 	</main>
 	<footer>&#169; Rachel Warner Portfolio <a href="https://www.pmsd.org/Domain/12" target="_blank">High School</a> <a href="https://www.uis.edu/" target="_blank">College</a> <a href="https://www.facebook.com/RachyRachWarner" target="_blank">Facebook</a> <a href="https://github.com/RMWarner9" target="_blank">GitHub</a></footer>
 </body>
-
 </html>
