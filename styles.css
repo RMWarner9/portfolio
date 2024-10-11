@@ -136,13 +136,21 @@ footer {
 
 
 /* Set the style attributes for the info cards*/
-#contact, .bio-card, #music-player, #interests, #intro, #work, #education, #hobbies, #fun-facts, #bio, #technical-proficiencies {
+#contact, .bio-card, #music-player, #interests, #intro, #work, #education, #hobbies, #fun-facts, #bio, #technical-proficiencies, #project {
   border-top: 31px solid #7a16bc8f;
   background-color: #6008b682;
   padding: 2rem;
   color: white;
   text-shadow: 0 0 3px white;
   width: 65%;
+  display: flex;
+  flex-direction: column;
+}
+
+#about-project{
+    display: flex;
+        flex-direction: column;
+        align-items: center;
 }
 
 
