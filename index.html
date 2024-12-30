@@ -7,130 +7,92 @@
 	<link rel="stylesheet" href="styles.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Playwrite+MX&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Playwrite+MX&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-	<script src="page-scripts.js">	</script>
+	<script src="page-scripts.js"></script>
 </head>
 <body>
-	<header>
-		<!-- Top navigation within the header of the page -->
-		<nav class="topnav">
-  			<a href="" aria-current="page" >Home</a>
-  			<!--A drop down navigation button for the about me pages -->
-  			<div class="dropdown">
-    			<button class="dropbtn">About Me</button>
-    			<nav class="dropdown-content">
-      				<a href="work-education.html">Work/Education</a>
-      				<a href="personal-family.html">Personal/Family</a>
-    			</nav>
-    		</div>
-  			<a href="projects.html">Projects</a>
-  			<a href="contact.html">Contact Me</a>
-  			<button id="toggleBtn" onclick="changeBackground()">Toggle Gif Background</button>
-  		</nav>
-	</header>
-	<!--- Main section of the portfolio it contains two main sections: a left and right-->
-	<!-- Each section is made of cards that hold different information-->
-	<main>
-		<section class="left">
-			<!-- Left side of the web page -->
-			<section class="bio-card">
-				<!-- Bio card represents a section of the code that will hold bio information -->
-				<section class="profile-info">
-					<section class="profile-picture">
-						<h2>Rachel Warner</h2>
-						<img src="photos/rachel.jpg" alt="A photo of Rachel">
-					</section>
-					<p id="tagline"> "Romans 8:38-39" </p>
-					<p>A driven developer, ready to take on the next big task</p>
-					<p>Based in: Reading, PA</p>
-					<p>United States</p>
-				</section>
-			</section>
+<header>
+	<nav class="topnav">
+		<a href="" aria-current="page">Home</a>
+		<div class="dropdown">
+			<button class="dropbtn">About Me</button>
+			<div class="dropdown-content">
+				<a href="work-education.html">Work/Education</a>
+				<a href="personal-family.html">Personal/Family</a>
+			</div>
+		</div>
+		<a href="projects.html">Projects</a>
+		<a href="contact.html">Contact Me</a>
+	</nav>
+</header>
 
-			<section id="intro">
-				<!-- The intro card holds a small introduction -->
-				<h3>Rachel's Introduction</h3>
-				<section id="about-me">
-					<h4>About me:</h4>
-					<p>Hi! I am Rachel Warner. I am Computer Science graduate of University of Illinois Springfield residing in Reading, Pennsylvania. <br>
-						This portfolio was inspired by some of the early 90's websites. I created it using HTML,CSS, and JS. It is responsive and accessible
-						according to W3C standards.<br>
-						<br>Get to know more about me by going to the About Me pages!
-					</p>
-				</section>
-			</section>
+<main>
+	<section class="left">
+		<div class="bio-card">
+			<div class="profile-info">
+				<div class="profile-picture">
+					<h2>Rachel Warner</h2>
+					<img src="photos/rachel.jpg" alt="A photo of Rachel">
+				</div>
+				<p>A driven developer, ready to take on the next big task</p>
+				<p>Based in: Reading, PA, USA</p>
+			</div>
+		</div>
 
+		<section id="intro">
+			<h3>Rachel's Introduction</h3>
+			<div id="about-me">
+				<h4>About me:</h4>
+				<p>
+					Hello! I'm Rachel Warner, a passionate Computer Science graduate from the University of Illinois Springfield, currently based in Reading, Pennsylvania. With a deep love for technology and design, I’ve built this portfolio as a nostalgic tribute to the early web, combining a retro aesthetic with modern web development principles. This site was crafted using HTML, CSS, and JavaScript, with a focus on clean code and W3C standards. Feel free to explore my About Me pages to learn more about my journey, skills, and projects!
+				</p>
 
-			<section id="technical-proficiencies">
-				<!-- The technical proficiencies card holds a table with technical proficiencies -->
-				<h3>Rachel's Technical Proficiencies </h3>
-				<section id="proficiencies">
-					<ul>
-						<li>Java</li>
-						<li>Python</li>
-						<li>C#</li>
-						<li>Spring</li>
-						<li>SQL / Relational Databases</li>
-					</ul>
-					<ul>
-						<li>API Development and Integration</li>
-						<li>.NET Development</li>
-						<li>JavaScript</li>
-						<li>HTML</li>
-						<li>CSS</li>
-					</ul>
-				</section>
-
-			</section>
-
-			<!-- The contact card holds links to contact information/external links to get in touch. -->
-			<section id="contact">
-				<h3>Contacting Rachel</h3>
-				<section id="contact-links">
-					<ul>
-						<li><a href="mailto:RMWarner96@gmail.com">Personal Email</a>
-						</li>
-						<li><a href="https://www.linkedin.com/in/rachel-marie-warner/" target="_blank">LinkedIn</a></li>
-					</ul>
-					<ul>
-						<li><a href="https://github.com/RMWarner9" target="_blank">GitHub</a></li>
-					</ul>
-				</section>
-			</section>
-
-			
+			</div>
 		</section>
 
-	</main>
-	<!--The footer section contains hyperlinks to High school, College, Facebook, and Github -->
-	<footer>&#169; Rachel Warner Portfolio <a href="https://www.pmsd.org/Domain/12" target="_blank">High School</a> <a href="https://www.uis.edu/" target="_blank">College</a> <a href="https://www.facebook.com/RachyRachWarner" target="_blank">Facebook</a> <a href="https://github.com/RMWarner9" target="_blank">GitHub</a>
-	</footer>
+		<section id="technical-proficiencies">
+			<h3>Rachel's Technical Proficiencies</h3>
+			<div id="proficiencies">
+				<ul>
+					<li>Java</li>
+					<li>Python</li>
+					<li>C#</li>
+					<li>Spring</li>
+					<li>SQL / Relational Databases</li>
+				</ul>
+				<ul>
+					<li>API Development and Integration</li>
+					<li>.NET Development</li>
+					<li>JavaScript</li>
+					<li>HTML</li>
+					<li>CSS</li>
+				</ul>
+			</div>
+		</section>
+
+		<section id="contact">
+			<h3>Contacting Rachel</h3>
+			<div id="contact-links">
+				<ul>
+					<li><a href="mailto:RMWarner96@gmail.com">Personal Email</a></li>
+					<li><a href="https://www.linkedin.com/in/rachel-marie-warner/" target="_blank">LinkedIn</a></li>
+				</ul>
+				<ul>
+					<li><a href="https://github.com/RMWarner9" target="_blank">GitHub</a></li>
+				</ul>
+			</div>
+		</section>
+	</section>
+
+</main>
+
+<footer>
+	&#169; Rachel Warner Portfolio
+	<a href="https://www.pmsd.org/Domain/12" target="_blank">High School</a>
+	<a href="https://www.uis.edu/" target="_blank">College</a>
+	<a href="https://www.facebook.com/RachyRachWarner" target="_blank">Facebook</a>
+	<a href="https://github.com/RMWarner9" target="_blank">GitHub</a>
+</footer>
 </body>
-
-<!-- This slides container is hidden. It holds the slide show on this page that appears when the user clicks the "Pics" link -->
-<section class="slides-container">
-	<button class="close-button" onclick="closeSlides()">&times;</button>	
-	<div class="slides-container-content">
-			<div class="slide">
-				<img src="photos/OurLittleFamily.jpg" alt="A picture of Rachel and Seth when Leon was a puppy">
-			</div>
-
-			<div class="slide">
-				<img src="photos/KatAndLeon.jpg" alt="Kat and Leon">
-			</div>
-
-			<div class="slide">
-				<img src="photos/Mom.jpg" alt="Rachel's Mom">
-			</div>
-
-			<div class="slide">
-				<img src="photos/SethAndMe.jpg" alt="Rachel and Seth">
-			</div>
-
-			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  			<a class="next" onclick="plusSlides(1)">&#10095;</a>
-  	</div>
-
-</section>
 </html>
