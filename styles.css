@@ -303,4 +303,10 @@ button:hover {
         flex-direction: column;
         gap: 20px;
     }
+
+    .left,
+    .right {
+    	width: auto; 
+    	padding: 10px;
+    }
 }
