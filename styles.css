@@ -228,6 +228,17 @@ footer a:hover {
       min-height: -webkit-fill-available;
       min-width: -webkit-fill-available;
   }
+  .dropdown-content {
+    display: none;
+    position: relative;
+    top: 4px;
+    background-color: #fdfaf7;
+    min-width: 180px;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    z-index: 1;
+    overflow: hidden;
+  }
 
   #proficiencies {
     flex-direction: column;
